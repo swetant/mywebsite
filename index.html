@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swetant Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css4?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images5/logo5.jpg" id="logo" alt="Nothing Important">
+        <ul class="navigation animate__animated animate__slideInDown" id="check">
+            <li><a href="#" class="item">Cake Dilevery</a></li>
+            <li><a href="#" class="item">How to order</a></li>
+            <li><a href="#" class="item">Check more</a></li>
+            <li><a href="#" class="item">Sign up</a></li>
+        </ul>
+        <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+        </nav>
+        <div class="section">
+            <h1>
+                Welcome to <span class="animation">apna cafe</span>.<br>
+                house of cake lover <span class="animation">spread happiness</span> 
+            </h1>
+            <div class="button">
+                <a href="#" class="btn" id="btn-first">Click to order</a>
+                <a href="#" class="btn" id="btn-second">Show me more</a>
+            </div>    
+        </div>
+    </header>
+    <script>
+        function slideshow(){
+            var x = document.getElementById('check');
+            if(x.style.display === "none"){
+                x.style.display="flex";
+            }else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
